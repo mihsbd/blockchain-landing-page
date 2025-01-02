@@ -8,6 +8,12 @@
     /* Power of Blockchain Section */
     .power .features .feature { max-width: 320px; }
 
+    /* Blockchain Future Section */
+    .future .card .content {
+        width: calc(100% - 30px);
+        padding: 1rem 0.7rem;
+    }
+
     /* Contact Us Section */
     .contact img { max-width: 41%; }
 }
@@ -22,6 +28,14 @@
     .mission .text { max-width: 45%; }
 
     .mission .stats { max-width: 55%; }
+
+    /* Blockchain Future Section */
+    .future .cards { padding-bottom: 6rem; }
+
+    .future .card .content {
+        width: calc(100% - 25px);
+        padding: 1rem 1.2rem;
+    }
 
     /* Contact Us Section */
     .contact img { max-width: 46%; }
@@ -49,11 +63,15 @@
     /* Blockchain Future Section */
     .future .cards {
         grid-template-columns: repeat(2, 1fr);
-        gap: 4rem;
-        padding-bottom: 1rem;
+        gap: 5rem;
+        padding-bottom: 2.5rem;
     }
       
-    .future .card .content { padding: 0.5rem 1rem; }
+    .future .card .content {
+        top: 70%;
+        width: calc(100% - 120px);
+        padding: 1rem 1.2rem;
+    }
 
     /* Contact Us Section */
     .contact img { max-width: 57%; }
@@ -117,15 +135,9 @@
 
 
     /* Blockchain Future Section */
-    .future .cards {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 7rem;
-        padding-bottom: 4rem;
-    }
-      
     .future .card .content {
-        top: 50%;
-        padding: 0.5rem 1rem;
+        width: calc(100% - 30px);
+        padding: 1rem 1rem;
         font-size: 0.9rem;
     }
 
@@ -173,9 +185,13 @@
     /* Blockchain Future Section */
     .future .cards {
         grid-template-columns: repeat(1, 1fr);
-        gap: 4rem;
-        padding-bottom: 0.5rem;
+        gap: 6rem;
     }
     
-    .future .card .content { top: 70%; }
+    .future .card .content {
+        width: calc(100% - 120px);
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
+
 }
