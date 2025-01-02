@@ -1,0 +1,181 @@
+/* Responsive Styles */
+
+/* Large Screens */
+@media (max-width: 1440px) {
+    /* Banner Section */
+    .banner h1 { font-size: 1.7rem; }
+
+    /* Power of Blockchain Section */
+    .power .features .feature { max-width: 320px; }
+
+    /* Contact Us Section */
+    .contact img { max-width: 41%; }
+}
+
+
+/* Laptops and Desktops */
+@media (max-width: 1280px) {
+    /* Banner Section */
+    .banner h1 { font-size: 1.5rem; }
+
+    /* Helping Blockchain Section */
+    .mission .text { max-width: 45%; }
+
+    .mission .stats { max-width: 55%; }
+
+    /* Contact Us Section */
+    .contact img { max-width: 46%; }
+}
+
+
+/* Tablets and Small Laptops */
+@media (max-width: 1024px) {
+    /* Banner Section */
+    .banner h1 { font-size: 1.2rem; }
+
+    /* Our Clients Section */
+    .client .logos { grid-template-columns: repeat(3, 1fr); }
+
+    /* Helping Blockchain Section */
+    .mission { flex-direction: column; }
+
+    .mission .text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .mission .stats { max-width: 100%; }
+
+    /* Blockchain Future Section */
+    .future .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        padding-bottom: 1rem;
+    }
+      
+    .future .card .content { padding: 0.5rem 1rem; }
+
+    /* Contact Us Section */
+    .contact img { max-width: 57%; }
+
+    .contact .form { max-width: 40%; }
+}
+
+
+/* Standard Mobile Devices */
+@media (max-width: 768px) {
+    /* Navbar Section */
+    nav .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    nav .cta {
+        padding: 0.2rem 0.7rem;
+        margin-top: 0.2rem;
+        position: absolute;
+        right: 0;
+    }
+
+    nav ul {
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.7rem;
+    }
+
+    nav ul li { padding: 0 0.5rem; }
+
+
+    /* Banner Section */
+    .banner {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .banner .content, .banner img { max-width: 100%; }
+
+    .banner h1 { font-size: 1.8rem; }
+
+
+    /* Our Clients Section */
+    .client .logos { grid-template-columns: repeat(2, 1fr); }
+
+
+    /* Power of Blockchain Section */
+    .power .features {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .power .features .feature { max-width: 350px; }
+
+
+    /* Helping Blockchain Section */
+    .mission .text h2 { font-size: 1.4rem; }
+
+
+    /* Blockchain Future Section */
+    .future .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 7rem;
+        padding-bottom: 4rem;
+    }
+      
+    .future .card .content {
+        top: 50%;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    
+    /* Contact Us Section */
+    .contact { flex-direction: column; }
+
+    .contact img {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .contact .form { max-width: 100%; }
+
+
+    /* Footer Section */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-middle, .footer-right { max-width: 100%; }
+
+    .footer-middle { text-align: start; }
+
+    .footer-social { justify-content: center; }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    /* Banner Section */
+    .banner h1 { font-size: 1.2rem; }
+
+    /* Power of Blockchain Section */
+    .power h2 { font-size: 1rem; }
+
+    /* Helping Blockchain Section */
+    .mission .stats {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Blockchain Future Section */
+    .future .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .future .card .content { top: 70%; }
+}

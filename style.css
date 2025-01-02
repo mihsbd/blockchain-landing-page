@@ -1,0 +1,355 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body { line-height: 1.6; }
+
+h1, h2, h3 { color: #555; }
+
+p, li, a, span, input, textarea, button  { color: #777; }
+
+a { text-decoration: none; }
+
+ul { list-style: none; }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    scroll-margin-top: 4rem;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+/* Navbar Section */
+nav {
+    background: #f8f9fa;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+nav .logo {
+    font-size: 1.6rem;
+    font-family: Impact, sans-serif;
+    color: #0056b3;
+}
+
+nav ul { display: flex; }
+
+nav ul li { padding: 0.5rem 0.5rem; }
+
+nav ul li a { color: #333; }
+
+nav ul li a:hover { color: #0056b3; }
+
+nav .cta {
+    padding: 0.3rem 0.8rem;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+nav .cta:hover { background: #0056b3; }
+
+
+/* Banner Section */
+#banner { background: #f1f5f9; }
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    gap: 2rem;
+}
+
+.banner .content { max-width: 50%; }
+
+.banner h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.banner p { margin-bottom: 1.5rem; }
+
+.banner button {
+    padding: 0.5rem 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.banner button:hover { background: #0056b3; }
+
+.banner img { max-width: 50%; }
+
+
+/* Our Clients Section */
+.client .logos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.client .logos img {
+    width: auto;
+    height: 2rem;
+}
+
+
+/* Power of Blockchain Section */
+#power { background: #f9f9f9; }
+
+.power .features {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.power .features .feature {
+    max-width: 300px;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.features .feature img {
+    width: 60px;
+    background-color: #00bfff33;
+    padding: 0.5rem;
+    border-radius: 15% 0 25% 0;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Helping Blockchain Section */
+#mission { background: #f1f5f9; }
+
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: start;
+    gap: 2rem;
+}
+
+.mission .text { max-width: 50%; }
+
+.mission .text h2 { margin-bottom: 1rem; }
+
+.mission .stats {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 250px;
+    padding: 0 1rem;
+}
+
+.stats .stat img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+/* Blockchain Future Section */
+.future .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+.future .card { position: relative; }
+
+.future .card .image img { border-radius: 8px; }
+
+.future .card .content {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.future .card .content p { margin-bottom: 10px; }
+
+.future .card .content:hover { background: #b1d5fc; }
+
+.future .card .read-more {
+    color: #007bff;
+    font-weight: bold;
+    display: inline-flex;
+}
+
+.future .card .read-more span {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+.future .card .read-more:hover span {
+    transform: translateX(5px);
+}
+
+
+/* Contact Us Section */
+#contact { background: #f2f2f2; }
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact img { max-width: 40%; }
+
+.contact .form { max-width: 50%; }
+
+.contact .form h2 { margin-bottom: 1.5rem; }
+
+.contact .form input, .contact .form textarea, .contact .form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact .form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact .form button:hover { background: #0056b3; }
+
+
+/* Footer Section */
+footer {
+    background-color: #1c2331;
+    padding: 3rem 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.footer-left { max-width: 35%; }
+
+.footer-left .logo {
+    font-size: 1.6rem;
+    font-family: Impact, sans-serif;
+    color: #007bff;
+    margin-bottom: 0.7rem;
+}
+
+.footer-left p {
+    margin-bottom: 1.3rem;
+    color: #bbbbbb;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social a img {
+    width: 36px;
+    height: 36px;
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.footer-middle {
+    max-width: 45%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.footer-middle h3 {
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.footer-middle ul { list-style: none; }
+
+.footer-middle ul li a {
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover { color: #eee; }
+
+.footer-right { max-width: 20%; }
+
+.footer-right h3 {
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+.footer-right input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e3b4e;
+    margin-bottom: 1.3rem;
+}
+
+.footer-right button {
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4c8bf5;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.footer-right button:hover { background-color: #3674d4; }
